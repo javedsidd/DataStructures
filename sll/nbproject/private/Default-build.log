@@ -1,0 +1,4 @@
+gcc -c sll_main.c
+gcc -c sll.c
+gcc sll_main.c sll.c -o sll
+rm sll_main.o sll.o
