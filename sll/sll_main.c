@@ -7,20 +7,20 @@
 
 #include "sll.h"
 
+
 int main(int c, char **v)
 {
-	if(c<2)
-	{
-		printf("usage: ./sll <n1><n2><n3>...\n");
-		return -1;
-	}
 
-Node *headptr=NULL;
-
-	int i=1;
-	for(  ; i < c ; i++)
+    Node *headptr=NULL;
+        int m,i,val;
+        printf("Enter number of elements in linked list:");
+        scanf("%d",&m);
+        srand((time(0)));
+	for( i=0 ; i < m ; i++)
 	{
-		sorted_add_ascending(&headptr,atoi(v[i]));
+ 
+            val=rand()%29;
+            sorted_add_ascending(&headptr,val);
 		
 		//add_node_at_begin(&headptr,atoi(v[i]));
 		//add_node_at_end(&headptr,atoi(v[i]));
